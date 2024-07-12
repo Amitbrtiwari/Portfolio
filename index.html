@@ -3,6 +3,8 @@
     <head>
 <meta charset="UTF-8">
 <meta name="viewport"content="width=device-width, initail-scale=1.0">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link href='https://unpkg.com/css.gg@2.0.0/icons/css/website.css' rel='stylesheet'>
 <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdhxkGBV8_nu-8-stih71GJiLeIbwJtDBekg&s"> 
 <style>
     *{
@@ -23,6 +25,17 @@
     .nav a{
         color:white;
         text-decoration: none;
+        transition: all 2s;
+    }
+    .nav a:hover{
+        color: chartreuse;
+        transform: skew(20deg);
+    }
+    .nav h1:hover{
+color: springgreen;
+    }
+    .wel h1:hover{
+        color: springgreen;
     }
     h1{
         color:white;
@@ -43,13 +56,25 @@
         position: relative;
         left: 10vw;
     }
-    .img1 img{
-        height: 50vh;
-        width: 50vh;
-        position: relative;
-        bottom: 20px;
-        transition: all 2s;
+    /* Keyframes for animation */
+@keyframes moveX {
+    from {
+        transform: translateX(0); /* Starting position */
     }
+    to {
+        transform: translateX(100px); /* Ending position */
+    }
+}
+
+/* Apply animation to the image */
+.img1 img {
+    height: 50vh;
+    width: 50vh;
+    position: relative;
+    bottom: 20px;
+    transition: all 2s;
+    animation: moveX 2s infinite alternate; /* Apply the animation */
+}
     .img1:hover{
         transform: translate(-50px);
     }
@@ -80,6 +105,8 @@ color:white
     color: white;
     display: flex;
     justify-content: center;
+    position: relative;
+    bottom: 10px;
   }
   .pro span{
 flex: 1;
@@ -97,6 +124,7 @@ font-weight: bold;
   .imp{
     display: flex;
     justify-content: space-evenly;
+    background-color: rgb(34, 33, 33);
   }
   .card1, .card2,.card3,.card4{
     margin: 5px;
@@ -104,19 +132,84 @@ font-weight: bold;
     border: 1px solid gray;
     justify-content: start;
   }
-  
- 
+
+  /* services*/
+  .service{
+    display: flex;
+margin-left: 7rem;
+margin-right: 5rem;}
+
+  .c1, .c2, .c3, .cs1, .cs2, .cs3{
+    border: 2px solid grey;
+    margin: 0.5em;
+    background-color: rgb(31, 29, 29);
+  }
+  .c1 i.gg-website,
+.c2 i.gg-website,
+.c3 i.gg-website,
+.cs1 i.gg-website,
+.cs2 i.gg-website,
+.cs3 i.gg-website {
+  color: yellow; /* Apply yellow color */
+  font-size: 2rem; /* Adjust icon size as needed */
+}
+/* Clinets */
+.client{
+    display: flex;
+
+}
+.cr1,.cr2,.cr3{
+    margin: 5px;
+    padding: 20px;
+border: 2px solid gray;
+width: 400px;
+display: flex;
+flex-direction: column;
+justify-content: center; /* Center horizontally */
+align-items: center; /* Center vertically */
+}
+.cr1 img{
+    height: 5rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: 2px red solid;
+   
+}
+.cr2 img{
+    height: 5rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: 2px red solid;}
+
+    .cr3 img{
+        height: 5rem;
+        width: 4rem;
+        border-radius: 50%;
+        border: 2px red solid;}
+        .form{
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+        }
+        #i{
+            position: relative;
+            left: 4rem;
+        }
+pre{
+    font-size: 0.7rem;
+}
 </style>
 </head>
- <body>
+ <body id="home">
    <div class="header">
     <div class="nav">
         <h1>Port<span style="color: yellow;">folio</span></h1> 
-        <a href="">Home</a>
-        <a href=""> About me</a>
-        <a href=""> Education</a>
-        <a href=""> My Services</a>
-        <a href="">Portfolio</a>
+        <a href="#home">Home</a>
+        <a href="#about"> About me</a>
+        <a href="#edu"> Education</a>
+        <a href="#services"> My Services</a>
+        <a href="C:\Users\HP\Desktop\Portfolio\portfolio.html">Portfolio</a>
     </div>
     </div>
 
@@ -133,7 +226,7 @@ font-weight: bold;
 
 
    
-   <div class="about">  
+   <div id="about" class="about">  
     <div class="left">
         <img id="g" src="https://img.pikbest.com/origin/10/43/16/30ipIkbEsTujY.jpg!w700wp"alt="">
     </div>  
@@ -175,6 +268,7 @@ font-weight: bold;
 </table>
 </div>
     </div>
+
     <h2 style="color:yellow; text-align:center"> My Skills</h2>
  <section class="skill">
     <div class="pro">
@@ -206,7 +300,7 @@ font-weight: bold;
 
 
 <section class="imp">
-    <div class="edu">
+    <div id ="edu" class="edu">
         <h2 style="color:yellow"> Education</h2>
         <!-- car1 -->
          <div class="card1">
@@ -277,11 +371,109 @@ font-weight: bold;
  </div>
 </h2>
 </div>
-
     </div>
  </section>
  
+  <!--  Services -->
+  <h3 style="color:yellow;text-align:center"> My Services</h3>
+    <section id ="services"class="service">
+        <div class="ser">
+            <div class="c1">
+                <i class="gg-website"></i>
+                <h3> Web Development</h3> 
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ullam.</p>
+            </div>
+         
+        <div class="c2">
+            <i class="gg-website"></i>
+            <h3> Front End Designn</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ullam.</p>
+        </div>
+        <div class="c3">
+            <i class="gg-website"> </i>
+            <h3> Creative Design</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ullam.</p>
+        </div>
+        </div>
+<div class="serv">
+    <div class="cs1">
+        <i class="gg-website"> </i>
+        <h3> Creative Design</h3>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ullam.</p>
+    </div>
+    <div class="cs2">
+        <i class="gg-website"> </i>
+        <h3> 3D Designs</h3>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ullam.</p>
+    </div>
+    <div class="cs3">
+        <i class="gg-website"></i>
+        <h3> Data Minning</h3>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ullam.</p>
+    </div>
+</div>
+ </section>
+
+ <!-- About Clients  -->
   
+ <h3 style="color:yellow;text-align:center"> What Client Say's </h3>
+ 
+ <section class="client">
+
+<div class="cr1">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXUPKZ9erFouixlbm5rkhMNXcJbzqtw5ST5A&s" alt="">
+<i class="fa fa-quote-left" aria-hidden="true"></i>
+<pre>
+    Contrary to popular belief,I will provide free 
+     portfolio website templates.It has roots in a
+     piece of classical Latin literature from 45 
+     BC, making it. Richard McClintock, 
+     Hampden-Sydney College.</pre>
+<p style="color:yellow"> Johndove</p>
+<p>Data Analysis</p>
+</div>
+<div class="cr2">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXUPKZ9erFouixlbm5rkhMNXcJbzqtw5ST5A&s" alt="">
+    <i class="fa fa-quote-left" aria-hidden="true"></i>
+    <pre>
+        Contrary to popular belief,I will provide free 
+         portfolio website templates.It has roots in a
+         piece of classical Latin literature from 45 
+         BC, making it. Richard McClintock, 
+         Hampden-Sydney College.</pre>
+    <p style="color:yellow"> Johndove</p>
+    <p>Data Analysis</p>
+</div>
+
+<div class="cr3">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXUPKZ9erFouixlbm5rkhMNXcJbzqtw5ST5A&s" alt="">
+<i class="fa fa-quote-left" aria-hidden="true"></i>
+<pre>
+    Contrary to popular belief,I will provide free 
+     portfolio website templates.It has roots in a
+     piece of classical Latin literature from 45 
+     BC, making it. Richard McClintock, 
+     Hampden-Sydney College.</pre>
+<p style="color:yellow"> Johndove</p>
+<p>Data Analysis</p>
+</div>
+
+ </section>
+<footer>
+    <h3 style="color:yellow; text-align:center"> Get In Touch</h3>
+    <div class="form">
+        <form >
+           <input type="text" placeholder="Full Name">
+           <br>
+           <input type="email" placeholder="Full Email Address">
+           <br>
+           <input type="number" placeholder="Full Mobile No">
+           <br>
+           <input type="message" placeholder="write a message">
+           <br> <input id ="i" style="background-color:yellow" type="button" value="Submit">
+        </form>
+    </div>
+</footer>
  </body>
 
     </html>
