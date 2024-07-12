@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="UTF-8">
+<meta name="viewport"content="width=device-width, initail-scale=1.0">
+<link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdhxkGBV8_nu-8-stih71GJiLeIbwJtDBekg&s"> 
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        background-color:black;
+        color: aliceblue;
+    
+    }
+    
+    .nav{
+       
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .nav a{
+        color:white;
+        text-decoration: none;
+    }
+    h1{
+        color:white;
+
+    }
+    p{
+        color: white;
+    }
+    .name{
+        display: flex;
+        justify-content: space-between;
+        height: 30em;
+        position: relative;
+        top: 10em;
+
+    }
+    .wel{
+        position: relative;
+        left: 10vw;
+    }
+    .img1 img{
+        height: 50vh;
+        width: 50vh;
+        position: relative;
+        bottom: 20px;
+        transition: all 2s;
+    }
+    .img1:hover{
+        transform: translate(-50px);
+    }
+   
+    
+    .about th{
+color:white
+    }
+    .about{
+        display: flex;
+        justify-content: space-between;
+        height: 25em;
+        position: relative;
+        background-color: rgb(39, 38, 38);
+    }
+.left img{
+    height: 30vh;
+    width: 30vw;
+    position: relative;
+    top: 4rem;
+}
+.about table{
+    border: 2px solid yellow;
+ position: relative;
+ left: 1.5rem;
+}
+  .skill{
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+  .pro span{
+flex: 1;
+text-align: right;
+margin-left: 10px;
+font-weight: bold;
+  }
+  .pro label{
+    flex:1;
+    text-align: left;
+    margin-right: 10px;
+    font-weight: bold;
+    color: rgb(153, 238, 238);
+  }
+  .imp{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .card1, .card2,.card3,.card4{
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid gray;
+    justify-content: start;
+  }
+  
+ 
+</style>
+</head>
+ <body>
+   <div class="header">
+    <div class="nav">
+        <h1>Port<span style="color: yellow;">folio</span></h1> 
+        <a href="">Home</a>
+        <a href=""> About me</a>
+        <a href=""> Education</a>
+        <a href=""> My Services</a>
+        <a href="">Portfolio</a>
+    </div>
+    </div>
+
+<div class="name">
+    <div class="wel">
+        <h2> <span style="color: yellow;">Welcom to my Portfolio</span></h2>
+<h1> Amit <span style="color: yellow;">Tiwari</span></h1>
+<p>-I'm a passionate fullstack developer from india</p>
+    </div>
+<div class="img1">
+    <img src="https://static.vecteezy.com/system/resources/previews/024/658/888/non_2x/3d-male-character-sitting-on-a-sofa-and-working-on-a-laptop-with-thinking-pose-free-png.png" alt="">
+</div>
+</div>
+
+
+   
+   <div class="about">  
+    <div class="left">
+        <img id="g" src="https://img.pikbest.com/origin/10/43/16/30ipIkbEsTujY.jpg!w700wp"alt="">
+    </div>  
+    <div class="right">
+        <h2 style="text-align:center; color:yellow">About Us </h2>
+        <p style="text-align:center"> I am available for fullstack projects with UI and UX</p>
+        <p style="text-align:center">
+            Hi,i am Amit Tiwari , from noida.Get complete website in 2024 with lots new feature.
+<table class="table">
+    <tr>
+
+    <th>Name:</th>
+    <th>Amit Tiwari</th>
+    <th>Phone:</th>
+    <th>7084935585</th>
+</tr>
+
+<tr>
+    <th>Email:</th>
+    <th>amittiwari5728@gmail.com</th>
+    <th>City:</th>
+    <th>Noida,India</th>
+</tr>
+
+<tr>
+    <th>Birthday</th>
+    <th>06-12-2002</th>
+    <th> Freelauncer:</th>
+    <th>Available</th>
+</tr>
+
+<tr>
+    <th> Study:</th>
+    <th> APJ Abdul Kalam University</th>
+    <th>website/th>
+    <th>invest.com</th>
+</tr>
+
+</table>
+</div>
+    </div>
+    <h2 style="color:yellow; text-align:center"> My Skills</h2>
+ <section class="skill">
+    <div class="pro">
+        <label for="progress">HTML</label>
+<progress id="progress" value="85%" max="100%"></progress>
+<span> 90%</span>
+<br>
+<label for="progress">CSS</label>
+<progress id="progress" value="80%" max="100%"></progress>
+<span> 85%</span>
+<br>
+<label for="progress">Java Script</label>
+<progress id="progress" value="85%" max="100%"></progress>
+<span> 80%</span>
+<br>
+<label for="progress">React</label>
+<progress id="progress" value="77%" max="100%"></progress>
+<span> 85%</span>
+<br>
+<label for="progress">UI & UX</label>
+<progress id="progress" value="85%" max="100%"></progress>
+<span> 74%</span>
+<br>
+<label for="progress">Power Bi</label>
+<progress id="progress" value="85%" max="100%"></progress>
+<span> 70%</span>
+    </div>  
+ </section>
+
+
+<section class="imp">
+    <div class="edu">
+        <h2 style="color:yellow"> Education</h2>
+        <!-- car1 -->
+         <div class="card1">
+            <h4> APJ Abdul Kalam University</h4>
+            <P style="color:yellow"> 2024-2026</P>
+            <pre> Master of Computer Application</pre>
+
+         </div>
+         <!-- card2 -->
+         <div class="card2">
+            <h4> G.L Bajaj Institute of Management</h4>
+            <P style="color:yellow"> 2020-2023</P>
+            <pre> Bachelors of Computer Application</pre>
+<
+         </div>
+          <!-- card 3 -->
+          <div class="card3">
+            <h4> State Board</h4>
+            <p style="color:yellow"> 2018-2019</P>
+            <pre> Intermediate</pre>
+
+         </div>
+           <!-- card 4 -->
+           <div class="card1">
+            <h4> State Board</h4>
+            <P style="color:yellow"> 2024-2026</P>
+            <pre> High School</pre>
+
+         </div>
+</h2>
+    </div>
+
+    <div class="ex">
+        <h2 style="color:yellow"> Experience</h2>
+ <!-- car1 -->
+ <div class="card1">
+    <h4>  Content Write </h4>
+    <P style="color:yellow"> JavaTpoint</P>
+    <pre> Crafted and edited content related to programming and web dev</pre>
+
+ </div>
+ <!-- card2 -->
+ <div class="card2">
+    <h4> Web Developer at EGSS</h4>
+    <P style="color:yellow">7 Month</P>
+    <pre> Developed and maintained various sites</pre>
+<
+ </div>
+  <!-- card 3 -->
+  
+  <div class="card3">
+    <h4 style="color:yellow;text-align:center">Projects</h2>
+    <h4> Blog Platform</h4>
+<P style="color:yellow"> 
+    1.HTML 2.CSS 3. Java Script
+    </P>
+    <pre> Complete</pre>
+
+ </div>
+   <!-- card 4 -->
+   <div class="card1">
+    <h4> Weather Application</h4>
+    <P style="color:yellow"> 
+    1.HTML 2.CSS 3. Java Script
+    </P>
+    <pre> Complete</pre>
+
+ </div>
+</h2>
+</div>
+
+    </div>
+ </section>
+ 
+  
+ </body>
+
+    </html>
